@@ -10,16 +10,19 @@ public class BasicCoreProgramming {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter number");
+		System.out.println("Enter an Alphabet");
 
-		int number = sc.nextInt();
+		char ch = sc.next().charAt(0);
 
-		if (number % 2 == 0) {
+		if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
+				|| ch == 'u' || ch == 'U') {
 
-			System.out.println("The entered number is even");
+			System.out.println("Alphabet" + ch + " is an vowel");
+		}
 
-		} else {
-			System.out.println("The entered number is odd");
+		else {
+
+			System.out.println("Alphabet" + ch + " is a consonant");
 		}
 
 	}
