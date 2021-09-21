@@ -7,52 +7,20 @@ public class BasicCoreProgramming {
 	public static void main(String[] args) {
 		System.out.println("Welcome to java core programming");
 
-		int Heads = 0;
-		int Tails = 0;
-		int Counter = 1;
+		Scanner sc = new Scanner(System.in);
 
-		double randNum = 0.0;
+		System.out.println("Enter any calender year");
 
-		double percentage_Heads;
+		int Leap_Year = sc.nextInt();
 
-		Scanner Input = new Scanner(System.in);
+		if (Leap_Year % 4 == 0 && Leap_Year % 100 != 0 || Leap_Year % 400 == 0) {
 
-		System.out.println("The Numbres of times to filp coin ");
+			System.out.println("This is leap year");
 
-		double flips = Input.nextDouble();
+		} else {
 
-		while (Counter <= flips) {
-
-			randNum = Math.random();
-
-			System.out.print(Counter + " " + randNum);
-
-			if (randNum < 0.5) {
-				Heads++;
-				System.out.println(" heads ");
-
-			}
-
-			else {
-				Tails++;
-				System.out.println(" tails ");
-			}
-
-			Counter++;
+			System.out.println("This is  not leap year");
 		}
-
-		System.out.println();
-
-		System.out.println("Number of Heads = " + Heads);
-		System.out.println("Number of Tails = " + Tails);
-
-		percentage_Heads = ((Heads / flips) * 100);
-
-		System.out.println("Percentage of Heads :" + percentage_Heads);
-
-		double percentage_Tails = ((Tails / flips) * 100);
-
-		System.out.println("Percentage of Heads :" + percentage_Tails);
 
 	}
 
