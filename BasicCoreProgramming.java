@@ -8,26 +8,15 @@ public class BasicCoreProgramming {
 
 		System.out.println("Welcome to java core programming");
 
-		Scanner scan = new Scanner(System.in);
+		double dividend = 36;
+		double divisor = 5;
 
-		System.out.println("Enter number ");
+		double Quotient = dividend / divisor;
+		double Remainder = dividend % divisor;
 
-		int num = scan.nextInt();
+		System.out.println("Quotient is equal :" + Quotient);
 
-		for (int i = 2; i < num; i++) {
-
-			while (num % i == 0) {
-
-				System.out.println(i + " ");
-				num = num / i;
-
-			}
-
-			if (num > 2) {
-
-				System.out.print(num);
-			}
-		}
+		System.out.println("Remainder is equal :" + Remainder);
 
 	}
 
