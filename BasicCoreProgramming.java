@@ -10,27 +10,17 @@ public class BasicCoreProgramming {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter Two numbers:");
+		System.out.println("Enter number");
 
-		System.out.println("Enter First number:");
+		int number = sc.nextInt();
 
-		int num1 = sc.nextInt();
+		if (number % 2 == 0) {
 
-		System.out.println("Enter Second number:");
+			System.out.println("The entered number is even");
 
-		int num2 = sc.nextInt();
-
-		int swap = num1;
-
-		num1 = num2;
-
-		num2 = swap;
-
-		System.out.println(" After swaping number is  : ");
-
-		System.out.println("First number : " + num1);
-
-		System.out.println(" second number:" + num2);
+		} else {
+			System.out.println("The entered number is odd");
+		}
 
 	}
 
