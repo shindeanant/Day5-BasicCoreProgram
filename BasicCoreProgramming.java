@@ -5,21 +5,24 @@ import java.util.Scanner;
 public class BasicCoreProgramming {
 
 	public static void main(String[] args) {
+		
 		System.out.println("Welcome to java core programming");
 
-		Scanner sc = new Scanner(System.in);
+		Scanner power = new Scanner(System.in);
 
-		System.out.println("Enter any calender year");
+		System.out.println("Enter a number:");
 
-		int leapyear = sc.nextInt();
+		int Number = power.nextInt();
 
-		if (leapyear % 4 == 0 && leapyear % 100 != 0 || leapyear % 400 == 0) {
+		System.out.println("Power of 2^" + Number + " is : " + (Math.pow(2, Number)));
 
-			System.out.println("This is leap year");
+		System.out.println();
 
-		} else {
+		System.out.println("Printing all till Power Value " + Number);
 
-			System.out.println("This is  not leap year");
+		for (int i = 1; i <= Number; i++) {
+
+			System.out.println("Power of 2^" + i + " is: " + (Math.pow(2, i)));
 		}
 
 	}
